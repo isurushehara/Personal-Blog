@@ -3,6 +3,25 @@ import react from '@vitejs/plugin-react'
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 
 export default defineConfig({
-  base: '/',
   plugins: [react()],
+  optimizeDeps: {
+    esbuildOptions: {
+      // Node.js global to browser globalThis polyfill
+      define: {
+        global: 'globalThis',
+      },
+      // Enable Buffer polyfill
+      plugins: [
+        NodeGlobalsPolyfillPlugin({
+          buffer: true,
+        }),
+      ],
+    },
+  },
+  build: {
+    rollupOptions: {
+      plugins: [
+      ],
+    },
+  },
 })
