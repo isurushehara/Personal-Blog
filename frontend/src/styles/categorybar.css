@@ -1,0 +1,15 @@
+.category-bar {
+  display: flex;
+  gap: 10px;
+  background: #f4f4f4;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.category {
+  background: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}

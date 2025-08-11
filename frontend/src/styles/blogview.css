@@ -1,0 +1,32 @@
+.blogview-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.blog-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.blog-content h1 {
+  margin-top: 0;
+}
+
+.post-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.featured-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.post-body {
+  line-height: 1.6;
+}
